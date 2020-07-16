@@ -47,14 +47,21 @@ declare namespace apex {
     namespace debug {
         /**
          * Log level constants
-         * @property LOG_LEVEL.OFF - Logging is off. Value is 0.
-         * @property LOG_LEVEL.ERROR - Error logging level. Value is 1.
-         * @property LOG_LEVEL.WARN - Warning logging level. Value is 2.
-         * @property LOG_LEVEL.INFO - Information logging level. Value is 4.
-         * @property LOG_LEVEL.APP_TRACE - Application tracing logging level. Value is 6.
-         * @property LOG_LEVEL.ENGINE_TRACE - Engine tracing logging level. Value is 9.
+         * @property OFF - Logging is off. Value is 0.
+         * @property ERROR - Error logging level. Value is 1.
+         * @property WARN - Warning logging level. Value is 2.
+         * @property INFO - Information logging level. Value is 4.
+         * @property APP_TRACE - Application tracing logging level. Value is 6.
+         * @property ENGINE_TRACE - Engine tracing logging level. Value is 9.
          */
-        var LOG_LEVEL: {};
+        var LOG_LEVEL: {
+            OFF: number;
+            ERROR: number;
+            WARN: number;
+            INFO: number;
+            APP_TRACE: number;
+            ENGINE_TRACE: number;
+        };
         /**
          * <p>Method that returns the debug log level.
          * The debug log level is synchronized with hidden input element <code class="prettyprint">#pdebug</code>.
